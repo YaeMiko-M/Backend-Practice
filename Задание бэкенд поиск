@@ -31,17 +31,17 @@ $data = [
     'product7' => ['price' => 3000, 'name' => 'Клавиатура']
 ];
 
-echo "~ ПОИСК ПО ЦЕНЕ ~\n";
+echo "- ПОИСК ПО ЦЕНЕ -\n";
 $search = ['price' => 100000];
 $result = searchData($data, $search);
 print_r($result);
 
-echo "\n~ ПОИСК ПО ИМЕНИ ~\n";
+echo "\n- ПОИСК ПО ИМЕНИ -\n";
 $search = ['name' => 'Телефон'];
 $result = searchData($data, $search);
 print_r($result);
 
-echo "\n~ ПОИСК ПО ЦЕНЕ ИЛИ ИМЕНИ ~\n";
+echo "\n- ПОИСК ПО ЦЕНЕ ИЛИ ИМЕНИ -\n";
 $search = ['price' => 100000, 'name' => 'Телефон'];
 $result = searchData($data, $search);
 print_r($result);
