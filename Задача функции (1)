@@ -36,12 +36,12 @@ function countUniqueResults($start, $end) {
     return count(array_unique($results));
 }
 
-echo " РЕЗУЛЬТАТЫ ЗАДАЧИ \n";
+echo "- РЕЗУЛЬТАТЫ ЗАДАЧИ -\n";
 echo "Диапазон от 1 до 15: " . countUniqueResults(1, 15) . " уникальных результатов\n";
 echo "Диапазон от 3 до 55: " . countUniqueResults(3, 55) . " уникальных результатов\n";
 echo "Диапазон от 9 до 43: " . countUniqueResults(9, 43) . " уникальных результатов\n";
 
-echo "\n ДЕМОНСТРАЦИЯ РАБОТЫ processData()\n";
+echo "\n- ДЕМОНСТРАЦИЯ РАБОТЫ processData() -\n";
 $testValues = [5, 7, 10, 15, 30, 41, 50];
 foreach ($testValues as $val) {
     echo "processData($val) = " . processData($val) . "\n";
